@@ -50,8 +50,8 @@ async function createFungibleToken() {
 
  // Part 4 - Transfer tokens
  let tokenTransferTx = await new TransferTransaction()
-  .addTokenTransfer(tokenId, aliceId, -20)
-  .addTokenTransfer(tokenId, bobId, 20)
+  .addTokenTransfer(tokenId, aliceId, -40)
+  .addTokenTransfer(tokenId, bobId, 40)
   .freezeWith(client)
   .sign(aliceKey);
 

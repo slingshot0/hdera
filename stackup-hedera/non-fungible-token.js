@@ -30,7 +30,7 @@ async function createNonFungibleToken() {
 
 
  // Part 2 - Mint token
- const CID = "ipfs://Qme5niYwb7b9dFimAgJwWYFUbxJ2rbM5MguV32Z4UuALmg/alice-nft-metadata.json";
+ const CID = "ipfs://QmaSH6QrD7f7NE7yPrYchJnMJ3uQEvgWuSzzUpRdmSvxhA/";
 
  let mintTx = await new TokenMintTransaction()
   .setTokenId(tokenId)

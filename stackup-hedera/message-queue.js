@@ -52,7 +52,7 @@ async function createMessageQueue() {
     newClient.setOperator(newAccountId, newAccountPrivateKey);
     await new TopicMessageSubmitTransaction()
      .setTopicId(newTopicId)
-     .setMessage(`User ${i} (${newAccountId}) has completed action no. ${i}`)
+     .setMessage(`Stackie has an account with account id ${newAccountId} that completed action no. ${i}`)
      .execute(newClient);
    }
 
