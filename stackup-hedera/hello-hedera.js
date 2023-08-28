@@ -47,7 +47,7 @@ async function helloWorld() {
  const contractExecTx = await new ContractExecuteTransaction()
   .setContractId(newContractId)
   .setGas(100000)
-  .setFunction("set_message", new ContractFunctionParameters().addString("Temidire"));
+  .setFunction("set_message", new ContractFunctionParameters().addString("Hello from Stackie"));
  const submitExecTx = await contractExecTx.execute(client);
  const receipt2 = await submitExecTx.getReceipt(client);
  console.log("The transaction status is " + receipt2.status.toString());
